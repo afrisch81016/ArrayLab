@@ -103,7 +103,7 @@ let dishes = [
     
 ]
 
-//Example function
+// //Example function
 // function findMexicanFood(){
 //     let results = dishes.filter(function(el){
 //         if(el.cuisine === "Mexican"){
@@ -169,8 +169,8 @@ let dishes = [
 
 // let italianfood = italianserversize();
 // console.log('Italian food and servings: ', italianfood)
-//3. Create a function that will return only dishes whose serving id number matches their serving count.
-//Filter
+// //3. Create a function that will return only dishes whose serving id number matches their serving count.
+// //Filter
 
 // function servingidmatch(){
 //     let results = dishes.filter(function(el){
@@ -187,8 +187,8 @@ let dishes = [
 // let idchoices = servingidmatch();
 // console.log ('Places that match servings and I.D. number: ', idchoices)
 
-//4. Create a function that will return only dishes whose serving count is even.
-//Filter
+// //4. Create a function that will return only dishes whose serving count is even.
+// //Filter
 // function servingivencount(){
 //     let results = dishes.filter(function(el){
                      
@@ -205,8 +205,8 @@ let dishes = [
 // let evenserving = servingivencount();
 // console.log('Even number of serving sizes: ',evenserving)
 
-//5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
-//Filter
+// //5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
+// //Filter
 
 // function arrayofingredients(){
 //     let results = dishes.filter(function(el){
@@ -224,25 +224,16 @@ let dishes = [
 
 
 
-//6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
-//Map
+// //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
+// //Map
 
-function typesofcuisine(){
-    results = dishes.filter(function(el){
-        if (el.cuisine){
-            return true;
-        }
-        else{
-            return false;
-        }})
-
-        return results;
-}
-let cusinetype = typesofcusisine();
-console.log('These are the types of cuisine: ', cusinetype)
-
-
-
+// function cuisinetypes(){
+//     let cuisineresults = dishes.map(function(el){
+//         return el.cuisine
+//     });
+//     return cuisineresults;
+// }
+// console.log('These are the types of cuisine: ',cuisinetypes())
 
 // BONUS: (come back to this after finishing all)
 
