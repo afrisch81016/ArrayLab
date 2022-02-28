@@ -147,18 +147,61 @@ console.log('vegetarian options: ', vegetarianoption)
 //2. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
 //Filter
 
+function italianserversize(){
+    let results = dishes.filter(function(el){
+        if (el.cuisine === "Italian"){
+            return true;
+        }
+        else{
+            return false;
+        }})
+
+        let servingsize = dishes.filter(function(element){
+            if (element.cuisine >=5){
+                return true;
+            }
+            else{
+                return false;
+            }})
+
+        return results;
+}
+
+let italianfood = italianserversize();
+console.log('Italian food and servings: ', italianfood)
 //3. Create a function that will return only dishes whose serving id number matches their serving count.
 //Filter
+
+function servingidmatch(){
+    let results = dishes.filter(function(el){
+        if (el.id === el.servings){
+            return true;
+        }
+        else{
+            return false;
+        }})
+
+    return results;
+}
+
+let idchoices = servingidmatch();
+console.log ('Places that match servings and I.D. number: ', idchoices)
 
 //4. Create a function that will return only dishes whose serving count is even.
 //Filter
 
+
+
 //5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
 //Filter
+
+
+
 
 //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
 // BONUS: (come back to this after finishing all)
+
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
 
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
