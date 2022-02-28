@@ -233,11 +233,24 @@ let dishes = [
 //     });
 //     return cuisineresults;
 // }
+
 // console.log('These are the types of cuisine: ',cuisinetypes())
 
 // BONUS: (come back to this after finishing all)
 
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
+function cuisinetypes(){
+    let cuisineresults = dishes.map(function(el){
+        return el.cuisine
+    });
+    return cuisineresults;
+}
+function cuisinelist(){
+    let cuisinesinglename = [...new Set(dishes.cuisine)];
+}
+
+console.log('These are the types of cuisine: ',(cuisinelist))
+
 
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
 //Map 
