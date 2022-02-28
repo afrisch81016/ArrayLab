@@ -189,8 +189,27 @@ console.log ('Places that match servings and I.D. number: ', idchoices)
 
 //4. Create a function that will return only dishes whose serving count is even.
 //Filter
+let getEvenNumbers = () => {
+    let evennumbers = dishes.filter();
+    	
+    let the_evens = evennumbers.filter(number => number % 2 == 0);
+    
+}
 
+function servingevencount(){
+    let results = dishes.filter(function(el){
+        if (el.servings == the_evens){
+            return true;
+        }
+        else{
+            return false;  
+        }})  
 
+    return results;
+}
+
+let evenserving = servingevencount();
+console.log('Even number of serving sizes: ',evenserving)
 
 //5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
 //Filter
